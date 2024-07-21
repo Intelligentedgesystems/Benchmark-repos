@@ -1,0 +1,7 @@
+gst-launch-1.0 \
+    filesrc location=input.jpg ! jpegdec ! videoconvert ! videoscale (maybe dynamic) ! [image transpose] ! \
+    tensor_converter ! tensor_transform mode=arithmtic option=typecast-float64,div:255.0 ! \
+    [torch image unsqueeze] ! [Covert to gpu] ! \
+    tensor_filter framework=tensorflow model=your_model.tflite ! \
+    [interpolation of image] ! [check argmax] ! [select 0th element from array]
+    tensor_sink

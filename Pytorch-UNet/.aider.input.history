@@ -1,0 +1,27 @@
+
+# 2024-07-12 12:41:29.025305
++Hello
+
+# 2024-07-12 12:41:38.138746
++export
+
+# 2024-07-12 12:46:15.160526
++Give me repo map for this repository Pytorch-Unet
+
+# 2024-07-12 12:49:02.155791
++I want to convert the python pipeline provided in this project starting from python `predict.py` which takes input from directory rather I want it to take input from gstreamer pipeline perform all the things in present pipeline and output through gstreamer pipeline
+
+# 2024-07-12 12:58:32.779964
++Also give me the input gstreamer pipeline which takes rgb input from camera every 10ms and output gstreamer pipeline which outputs the masked image
+
+# 2024-07-12 12:59:49.902374
++I want gstreamer pipeline to run in terminal
+
+# 2024-07-12 14:49:39.504336
++Give me repo map of `predict.py`
+
+# 2024-07-12 14:53:34.609964
++Change `train.py` file to instead taking inputs for training from local directory, it should take inputs from gst pipeline which produce two images one rgb and another mask image required as input and output for this model
+
+# 2024-07-12 15:07:14.848051
++As you put GstPipelineDataset to `train.py` now also provide this class to take inputs of rgb and mask image from this pipeline
